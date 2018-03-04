@@ -1,0 +1,117 @@
+// Bootstrap library
+@import "bootstrap/scss/bootstrap";
+// My Bootstrap configuration
+@import 'custom_bootstrap';
+$ecvc-primary: #00a485;
+$ecvc-secondary: #00c75c;
+.bg-ecvc-primary {
+    background-color: $ecvc-primary;
+}
+
+.bg-ecvc-secondary {
+    background-color: $ecvc-secondary;
+}
+
+.text-ecvc-primary {
+    color: $ecvc-primary;
+}
+
+.text-ecvc-secondary {
+    color: $ecvc-secondary;
+}
+
+.bg-ecvc-recentes {
+    background-image: -webkit-gradient( linear, right top, left bottom, color-stop(0, #00BFA6), color-stop(1, #00C853));
+    background-image: -o-linear-gradient(left bottom, #00BFA6 0%, #00C853 100%);
+    background-image: -moz-linear-gradient(left bottom, #00BFA6 0%, #00C853 100%);
+    background-image: -webkit-linear-gradient(left bottom, #00BFA6 0%, #00C853 100%);
+    background-image: -ms-linear-gradient(left bottom, #00BFA6 0%, #00C853 100%);
+    background-image: linear-gradient(to left bottom, #00BFA6 0%, #00C853 100%);
+}
+
+.bg-ecvc-poli {
+    background-image: -webkit-gradient( linear, right top, left bottom, color-stop(0, #1DE9B6), color-stop(1, #008E76));
+    background-image: -o-linear-gradient(left bottom, #1DE9B6 0%, #008E76 100%);
+    background-image: -moz-linear-gradient(left bottom, #1DE9B6 0%, #008E76 100%);
+    background-image: -webkit-linear-gradient(left bottom, #1DE9B6 0%, #008E76 100%);
+    background-image: -ms-linear-gradient(left bottom, #1DE9B6 0%, #008E76 100%);
+    background-image: linear-gradient(to left bottom, #1DE9B6 0%, #008E76 100%);
+}
+
+.bg-ecvc-gerais {
+    background-image: -webkit-gradient( linear, right top, left bottom, color-stop(0.38, #337D76), color-stop(1, #00E6FF));
+    background-image: -o-linear-gradient(left bottom, #337D76 38%, #00E6FF 100%);
+    background-image: -moz-linear-gradient(left bottom, #337D76 38%, #00E6FF 100%);
+    background-image: -webkit-linear-gradient(left bottom, #337D76 38%, #00E6FF 100%);
+    background-image: -ms-linear-gradient(left bottom, #337D76 38%, #00E6FF 100%);
+    background-image: linear-gradient(to left bottom, #337D76 38%, #00E6FF 100%);
+}
+
+.bg-ecvc-outras {
+    background-image: -webkit-gradient( linear, right top, left bottom, color-stop(0.18, #A9B8BA), color-stop(1, #1C4447));
+    background-image: -o-linear-gradient(left bottom, #A9B8BA 18%, #1C4447 100%);
+    background-image: -moz-linear-gradient(left bottom, #A9B8BA 18%, #1C4447 100%);
+    background-image: -webkit-linear-gradient(left bottom, #A9B8BA 18%, #1C4447 100%);
+    background-image: -ms-linear-gradient(left bottom, #A9B8BA 18%, #1C4447 100%);
+    background-image: linear-gradient(to left bottom, #A9B8BA 18%, #1C4447 100%);
+}
+
+.nounderline {
+    a:hover,
+    a:visited,
+    a:focus {
+        text-decoration: none !important;
+    }
+}
+
+.norb-img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.circle-small {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-nav {
+    width: fit-content;
+    padding: 0 !important;
+    margin-top: 5px;
+    border-left: 1px solid #eeeeee !important;
+    border-right: 0px none !important;
+    height: 45px
+}
+
+.profile-nav .p-image {
+    float: left;
+    margin: 2px 8px 0 8px;
+    min-width: 35px
+}
+
+.profile-nav .p-image .user-img {
+    max-width: 100%
+}
+
+.profile-nav .profile-content {
+    float: left;
+    height: fit-content
+}
+
+.profile-nav .profile-content .profile-name {
+    margin: 0;
+    font-family: "Source Sans Pro Semibold";
+    font-size: 14px
+}
+
+.profile-nav .profile-content .profile-university {
+    margin: 0;
+    font-family: "Source Sans Pro Regular";
+    position: relative;
+    bottom: 8px
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
   Navbar, NavbarBrand, Fa, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink,
-  Button, Carousel, CarouselCaption, CarouselControl, CarouselInner, CarouselItem
+  Button, Carousel, CarouselCaption, CarouselControl, CarouselInner, CarouselItem,
+  Input
 } from 'mdbreact';
 // import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
@@ -249,7 +250,7 @@ class App extends Component {
     this.prev = this.prev.bind(this);
     this.state = {
       activeItem: 1,
-      maxLength: 4
+      maxLength: 3
     };
   }
   componentDidMount() {
@@ -383,9 +384,15 @@ class App extends Component {
                 {/* Main column */}
                 <div className="col-lg-10 col-md-12">
                   <div className="container">
+                    <div className="row mt-5 pt-5">
+                      <div className="col-12 text-justify mt-2 pt-2">
+                        <Input label="Busque por Professor, Área de interesse ou Curso" />
+                      </div>
+                    </div>
 
-                    {/* <div className="row mt-5 pt-5">
+                    {/* <div className="row mt-4 pt-4">
                       <div className="col text-center">
+                        <h3 className="font-weight-bold text-muted">Recomendados especialmente pra você!</h3>
                         <Carousel
                           activeItem={this.state.activeItem}
                           next={this.next}
@@ -396,8 +403,16 @@ class App extends Component {
                                 <div className="col-md-4">
                                   <EcvcCardComponent
                                     imageSrc={Calc2}
-                                    title='Cálculo 2'
-                                    content='311 conteúdos' bg='bg-ecvc-primary'
+                                    title='Rec 1'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
+                                  ></EcvcCardComponent>
+                                </div>
+
+                                <div className="col-md-4">
+                                  <EcvcCardComponent
+                                    imageSrc={Calc2}
+                                    title='Rec 2'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
                                   ></EcvcCardComponent>
                                 </div>
 
@@ -405,39 +420,65 @@ class App extends Component {
                                   <EcvcCardComponent
                                     imageSrc={Calc2}
                                     title='Cálculo 2'
-                                    content='311 conteúdos' bg='bg-ecvc-secondary'
-                                  ></EcvcCardComponent>
-                                </div>
-
-                                <div className="col-md-4">
-                                  <EcvcCardComponent
-                                    imageSrc={Calc2}
-                                    title='Cálculo 2'
-                                    content='311 conteúdos' bg='bg-ecvc-secondary'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
                                   ></EcvcCardComponent>
                                 </div>
                               </div>
                             </CarouselItem>
                             <CarouselItem itemId="2">
-                              <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg" alt="First slide" />
-                              <CarouselCaption>
-                                <h3 className="h3-responsive">Strong mask</h3>
-                                <p>Second text</p>
-                              </CarouselCaption>
+                              <div className="row">
+                                <div className="col-md-4">
+                                  <EcvcCardComponent
+                                    imageSrc={Calc2}
+                                    title='Cálculo 2'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
+                                  ></EcvcCardComponent>
+                                </div>
+
+                                <div className="col-md-4">
+                                  <EcvcCardComponent
+                                    imageSrc={Calc2}
+                                    title='Cálculo 2'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
+                                  ></EcvcCardComponent>
+                                </div>
+
+                                <div className="col-md-4">
+                                  <EcvcCardComponent
+                                    imageSrc={Calc2}
+                                    title='Cálculo 2'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
+                                  ></EcvcCardComponent>
+                                </div>
+                              </div>
                             </CarouselItem>
+
                             <CarouselItem itemId="3">
-                              <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg" alt="First slide" />
-                              <CarouselCaption>
-                                <h3 className="h3-responsive">Slight mask</h3>
-                                <p>Third text</p>
-                              </CarouselCaption>
-                            </CarouselItem>
-                            <CarouselItem itemId="4">
-                              <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20%28143%29.jpg" alt="Mattonit's item" />
-                              <CarouselCaption>
-                                <h3 className="h3-responsive">Sopot Beach</h3>
-                                <p>Taken june 21th by @mattonit</p>
-                              </CarouselCaption>
+                              <div className="row">
+                                <div className="col-md-4">
+                                  <EcvcCardComponent
+                                    imageSrc={Calc2}
+                                    title='Cálculo 2'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
+                                  ></EcvcCardComponent>
+                                </div>
+
+                                <div className="col-md-4">
+                                  <EcvcCardComponent
+                                    imageSrc={Calc2}
+                                    title='Cálculo 2'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
+                                  ></EcvcCardComponent>
+                                </div>
+
+                                <div className="col-md-4">
+                                  <EcvcCardComponent
+                                    imageSrc={Calc2}
+                                    title='Cálculo 2'
+                                    content='311 conteúdos' bg='bg-ecvc-recentes'
+                                  ></EcvcCardComponent>
+                                </div>
+                              </div>
                             </CarouselItem>
                           </CarouselInner>
                           <CarouselControl direction="prev" role="button" onClick={() => { this.prev(); }} />
@@ -448,7 +489,7 @@ class App extends Component {
 
                     {data.map((item) =>
                       <section id={item.id} name={item.id}>
-                        <div className="row mt-5 pt-5">
+                        <div className="row mt-3 pt-3">
                           <h3 className="font-weight-bold text-muted">{item.section}</h3>
                         </div>
 
